@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main_screaen_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@color/green"
+        >
+
+
+
+
+
+        <TextView
+            android:id="@+id/fall_detection_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="app status: "
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/fall_detection_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="working "
+            android:textSize="70sp"
+            android:padding="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/fall_detection_status_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Turn OFF "
+                android:textSize="20sp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:padding="10dp"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Settings "
+                android:textSize="25sp"
+                android:gravity="top"
+                android:padding="5dp"
+                android:layout_weight="5"
+                />
+
+            <Button
+                android:id="@+id/settings_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="apply"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/timer_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set countdown time in seconds: "
+                android:textSize="18sp"
+                android:gravity="top"
+                android:padding="5dp"
+                android:paddingStart="20dp"
+                />
+
+            <EditText
+                android:id="@+id/timer_time_set"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:inputType="number"
+                android:maxLength="5"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="target phone number: "
+                android:textSize="18sp"
+                android:gravity="top"
+                android:padding="5dp"
+                android:paddingStart="20dp"
+                />
+
+            <EditText
+                android:id="@+id/phone_number_set"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:inputType="number"
+                android:maxLength="9"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/sms_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text message: "
+                android:textSize="18sp"
+                android:gravity="top"
+                android:padding="5dp"
+                android:paddingStart="20dp"
+                />
+
+            <EditText
+                android:id="@+id/sms_text_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:maxLength="30"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
